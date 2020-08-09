@@ -17,6 +17,7 @@ class CreateTeamsTable extends Migration
             $table->id();
             $table->string('team_name');
             $table->string('team_logo')->nullable();
+            $table->string('team_slug')->nullable();
             $table->softDeletes();
             $table->timestamps();
         });

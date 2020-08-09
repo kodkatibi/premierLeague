@@ -21,6 +21,7 @@ class CreateMatchTeamsTable extends Migration
             $table->timestamp('match_date')->nullable();
             $table->integer('host_total_goal')->nullable();
             $table->integer('visitor_totol_goal')->nullable();
+            $table->string('match_slug');
             $table->softDeletes();
             $table->timestamps();
         });
