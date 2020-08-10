@@ -15,9 +15,9 @@ class CreateSeasonsTable extends Migration
     {
         Schema::create('seasons', function (Blueprint $table) {
             $table->id();
-            $table->string('name')->nullable();
-            $table->dateTime('start_at');
-            $table->dateTime('end_at');
+            $table->string('s_name')->nullable();
+            $table->dateTime('s_start_at');
+            $table->dateTime('s_end_at');
             $table->softDeletes();
             $table->timestamps();
         });
